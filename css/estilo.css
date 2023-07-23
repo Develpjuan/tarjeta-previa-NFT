@@ -135,3 +135,29 @@ body {
     color:rgb(0, 255, 247);
 }
 
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .card {
+        width: 85%;
+    }
+
+    .card__text,
+    .container-data__num,
+    .container-data__date,
+    .container-author__text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .card {
+        width: 50%
+    }
+
+    .card__text,
+    .container-data__num,
+    .container-data__date,
+    .container-author__text {
+        font-size: 20px;
+    }
+}
+
