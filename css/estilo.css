@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 25, 43);
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+}
+
+.container-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    width: 85%;  
+    height: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 247, 0.466);
+}
+
+.container-img:hover .fondo {
+    z-index: 100;
+}
+
+.view {
+    position: absolute;
+}
+
+.container-img:hover .view {
+    z-index: 100;
+}
+
+.card__img {
+    position: relative;
+    width: 100%; /* 85% */
+    height: 100%;  /* 272px - 85%*/
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__title {
+    width: 85%;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.card__title:hover {
+    color:rgb(0, 255, 247);
+}
+
+.card__text {
+    width: 85%;
+    color: hsl(215, 51%, 70%);
+    margin: 0 0 5px 0;
+}
+
+.container-data {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(47, 65, 91);
+    margin-bottom: 10px;
+}
+
+.container-data__num {
+    display: flex;
+    color: rgb(0, 255, 247);
+    margin-left: 5px;
+}
+
+.container-data__num::before {
+    content: url("../images/icon-ethereum.svg");
+    margin-right: 5px;
+}
+
+.container-data__date {
+    display: flex;
+    color: rgb(139, 172, 218);
+}
+
+.container-data__date::before {
+    content: url("../images/icon-clock.svg");
+    margin-right: 5px;
+}
+
+.container-author {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.container-author__avatar {
+    width: 12%;
+    height: 12%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.container-author__text {
+    color: rgb(139, 172, 218);
+    margin: 0 0 0 10px;
+}
+
+.container-author__name {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.container-author__name:hover {
+    color:rgb(0, 255, 247);
+}
+
